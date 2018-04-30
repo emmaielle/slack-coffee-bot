@@ -8,7 +8,7 @@ module.exports = function(controller) {
         let chosen = 'no one';
         bot.api.users.list({}, function(err, list){
             console.log(list)
-            let users = bot.api.users.list;
+            let users = list;
             console.log(users);
             const random = Math.random();
             // console.log(random);
