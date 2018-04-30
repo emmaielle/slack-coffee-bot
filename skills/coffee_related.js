@@ -3,8 +3,7 @@ var debug = require('debug')('botkit:channel_join');
 module.exports = function(controller) {
 
     controller.hears(['coffee', 'cafe', 'café', 'Coffee', 'Coffee?', 'coffee?', '*coffee*', 'sup', 'give me coffee',
-    'Give me coffee'], 
-    ['direct_mention', 'mention', 'direct_message'], (bot, message) => {
+    'Give me coffee'], ['direct_mention', 'mention', 'direct_message'], (bot, message, next) => {
         bot.reply(message, 'beep bop...');
         let chosen = 'no one';
         let users = bot.users;
@@ -15,6 +14,8 @@ module.exports = function(controller) {
         chosen = users[index];
         console.log(chosen);
         bot.reply(message, `<@${chosen}> your turn to make coffee!`);
+
+        next();
     })
 
 }
