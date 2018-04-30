@@ -1,7 +1,7 @@
 {
-  "name": "botkit-starter-slack",
+  "name": "coffee-bot-slack",
   "version": "0.0.2",
-  "description": "A starter kit for building a custom Slack bot with Botkit Studio",
+  "description": "Random coffee making responsibility attribution made with Botkit Studio",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
@@ -23,16 +23,17 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/howdyai/botkit-starter-slack.git"
+    "url": "https://github.com/emmaielle/slack-coffee-bot.git"
   },
   "bugs": {
-    "url": "https://github.com/howdyai/botkit-starter-slack/issues"
+    "url": "https://github.com/emmaielle/slack-coffee-bot/issues"
   },
-  "homepage": "https://github.com/howdyai/botkit-starter-slack",
+  "homepage": "https://github.com/emmaielle/slack-coffee-bot",
   "keywords": [
     "bots",
     "chatbots",
-    "slack"
+    "slack",
+    "coffee"
   ],
   "author": "ben@howdy.ai",
   "license": "ISC"
